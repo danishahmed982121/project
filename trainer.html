@@ -1,0 +1,901 @@
+
+<!DOCTYPE html>
+ <html lang="en" class="no-js">
+    <head>
+
+        <meta charset="utf-8">
+     
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>TITANIUM-Gym | Home </title>				
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- CSS
+		================================================== -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        
+		
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+		<style>
+
+h6{
+    color: #43e3ff;
+    font-family: algerian;
+    font-size: 50px;
+}
+.animenu__toggle {
+  display: none;
+  cursor: pointer;
+  background-color: ;
+  border: 0;
+  padding: 20px;
+  height: 40px;
+  width: 100%;
+
+  }
+.animenu__toggle:hover {
+  background-color: #004574;
+}
+
+.animenu__toggle__bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: ;
+  transition: 0.15s cubic-bezier(0.75, -0.55, 0.25, 1.55);
+}
+.animenu__toggle__bar + .animenu__toggle__bar {
+  margin-top: 4px;
+}
+
+.animenu__toggle--active .animenu__toggle__bar {
+  margin: 0;
+  position: absolute;
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.animenu {
+  display: block;
+
+}
+.animenu ul {
+  padding: 0;
+  list-style: none;
+  font: 0px 'Open Sans', Arial, Helvetica;
+  margin-left:400px;
+  margin-top:2px;
+  }
+.animenu li, .animenu a {
+  display: inline-block;
+  font-size: 15px;
+  
+}
+.animenu a {
+  color: #009fa5;
+  text-decoration: none;
+}
+
+.animenu__nav {
+  background-color:;
+}
+.animenu__nav > li {
+  position: relative;
+  border-right: 1px solid ;
+}
+.animenu__nav > li > a {
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+.animenu__nav > li > a:first-child:nth-last-child(2):before {
+  content: "";
+  position: absolute;
+  border: 4px solid transparent;
+  border-bottom: 0;
+  border-top-color: currentColor;
+  top: 50%;
+  margin-top: -2px;
+  margin-left: -5px;
+  right: 10px;
+}
+.animenu__nav > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+.animenu__nav > li:hover > a {
+  color: #ffffff;
+}
+
+.animenu__nav__child {
+  min-width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  margin: 20px 0 0 0;
+  background-color: #373737;
+  transition: margin .15s, opacity .15s;
+}
+.animenu__nav__child > li {
+  width: 100%;
+  border-bottom: 1px solid #515151;
+}
+.animenu__nav__child > li:first-child > a:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 1em;
+  top: -6px;
+  border: 6px solid transparent;
+  border-top: 0;
+  border-bottom-color: inherit;
+}
+.animenu__nav__child > li:last-child {
+  border: 0;
+}
+.animenu__nav__child a {
+  padding: 10px;
+  width: 100%;
+  border-color: #373737;
+}
+.animenu__nav__child a:hover {
+  background-color: #0186ba;
+  border-color: #0186ba;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .animenu__toggle {
+    display: inline-block;
+  }
+
+  .animenu__nav,
+  .animenu__nav__child {
+    display: none;
+  }
+
+  .animenu__nav {
+    margin: 20px 0;
+  }
+  .animenu__nav > li {
+    width: ;
+    border-right: 0;
+    border-bottom: 1px solid #515151;
+  }
+  .animenu__nav > li:last-child {
+    border: 0;
+  }
+  .animenu__nav > li:first-child > a:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 1em;
+    top: -6px;
+    border: 6px solid transparent;
+    border-top: 0;
+    border-bottom-color: inherit;
+  }
+  .animenu__nav > li > a {
+    width: 100%;
+    padding: 10px;
+    border-color: #111;
+    position: relative;
+  }
+  .animenu__nav a:hover {
+    background-color: #ff1e00;
+    border-color: #0186ba;
+    color: #fff;
+  }
+
+  .animenu__nav__child {
+    position: static;
+    background-color: #080000;
+    margin: 0;
+    transition: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  .animenu__nav__child > li:first-child > a:after {
+    content: none;
+  }
+  .animenu__nav__child a {
+    padding-left: 20px;
+    width: 100%;
+  }
+}
+.animenu__nav--open {
+  display: block !important;
+}
+.animenu__nav--open .animenu__nav__child {
+  display: block;
+}
+.log1{
+color:black;
+}
+.parallax1b1{
+	background-image:url("./images/66.webp");
+
+        background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	height:350px;
+	width:100%;
+
+	}
+	.body {
+    background-image:url("/images/main.jpg");
+
+    height:auto; 
+	width:100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	line-height: 24px;
+    font-size: 16px;
+    color: #00ccff;
+}
+.ab1{
+	height:300px;
+	width:290px;
+    border:dashed 1px rgb(2, 172, 252);
+	border-radius:5px;
+	background: rgb(255, 255, 255);
+    position: relative;
+    -webkit-animation: myfirst 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    50%  {background: yellow; left: 200px; top: 0px;}
+    100%  {background: blue; left: 200px; top: 200px;}
+    50%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    50%  {background: yellow; left: 200px; top: 0px;}
+    100%  {background: blue; left: 200px; top: 200px;}
+    50%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+	/* footer */
+  #social {
+    background-image: url("./images/.jpeg");
+    padding: 0;
+}
+
+#social .overlay {
+    background: url("./images/g.jpeg") repeat scroll 0 0 transparent;
+    padding: 30px 0 120px;
+}
+
+.social-button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.social-button li {
+    display: inline-block;
+}
+
+.social-button li:nth-child(2) {
+    margin: 0 55px;
+}
+
+.social-button li a {
+    border: 2px solid #feffff;
+    border-radius: 50%;
+    color: #f8fcfd;
+    display: block;
+    height: 90px;
+    line-height: 96px;
+    width: 90px;
+    
+    -webkit-transition: all 0.2s ease 0s;
+       -moz-transition: all 0.2s ease 0s;
+        -ms-transition: all 0.2s ease 0s;
+         -o-transition: all 0.2s ease 0s;
+            transition: all 0.2s ease 0s;
+}
+
+.social-button li a:hover {
+    color: #00b3ff;
+    border: 2px solid #0088b9;
+}
+
+/* footer end */
+ /* marquee  */
+
+ .page1 {
+  width: 100%;
+  height: 100vh;
+  --space: 2rem;
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  overflow: hidden;
+  gap: var(--space);
+  width: 100%;
+  height: 100vh;
+  font-family: "Corben", system-ui, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.marquee .marquee--borders p{
+  color: white;
+}
+.marquee {
+  --duration: 40s;
+  --gap: var(--space);
+
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  transform: skewY(-3deg);
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+.marquee__group img {
+  max-width: clamp(35rem, 1rem + 28vmin, 20rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.marquee__group p {
+  background-image: linear-gradient(75deg,
+      hsl(189, 99%, 26%) 0%,
+      hsl(187, 100%, 48%) 78%,
+      hsl(0, 0%, 0%) 89%,
+      hsl(187, 100%, 48%) 78%,
+      hsl(0, 0%, 0%) 89%,
+      hsl(187, 100%, 48%) 78%,
+      hsl(0, 0%, 0%) 89%,
+      hsl(187, 100%, 48%) 78%,
+      hsl(0, 0%, 0%) 89%,
+      hsl(187, 100%, 50%) 100%);
+
+  -webkit-text-fill-color: white;
+  border-radius: 2px;
+  font-size: 4rem;
+}
+
+.marquee--borders {
+  border-block: 3px solid rgb(215, 220, 224);
+  padding-block: 2rem;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: calc(var(--duration) / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+/* 1 aniamtion end */
+h6{
+    color: #ffffff;
+    font-family: algerian;
+    font-size: 50px;
+}
+.page3{
+
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+
+  
+}
+
+.box{
+  width: 80%;
+  height: 80vh;
+  border-radius: 45px;
+  border: solid 5px #f7fdff;
+  background: url(./images/tr.jpeg);  
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.box h1{
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btb{
+  font-size: 2rem;
+background-image: linear-gradient(19deg, #00d9ff 0%, #fff5f5 100%);
+color: #000000;
+border-radius:8px;
+border: 1px solid transparent;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+cursor: pointer;
+}
+.btb{  
+  animation: hello 8s infinite alternate;
+  
+
+  
+}
+
+@keyframes hello {
+100%{
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 3px, rgb(88, 197, 248) 0px 0px 0px 6px, rgb(0, 0, 0) 0px 0px 0px 9px, rgb(0, 183, 238) 0px 0px 0px 12px, rgb(0, 0, 0) 0px 0px 0px 15px;
+
+}  
+
+}
+
+.box .btb{
+  padding: 20px;
+}
+@media screen and (max-width: 575px){
+  .page3 .box{
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 489px){
+  .page3 .box h1{
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 411px){
+  .page3 .box h1{
+    font-size: 2.8rem;
+  }
+}
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin:0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+
+  color:white;
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: rgb(245, 251, 255);
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+</style>
+
+
+    </head>
+	
+    <body class="body">
+
+		<!-- preloader -->
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
+		</div>
+		<!-- end preloader -->
+
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header ">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					
+						<div class=" wow animated bounceInRight"><img src="images/LOOGO.PNG" class="img-responsive" style="height:59px; width:250px;  "></div>
+                    
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="animenu"> 
+  <button class="animenu__toggle">
+    <span class="animenu__toggle__bar"></span>
+    <span class="animenu__toggle__bar"></span>
+    <span class="animenu__toggle__bar"></span>
+  </button>
+  <ul class="animenu__nav">
+    <li class="">
+      <a href="index.html" style="font-size: 18px;">Home</a>
+    </li>
+	<li>
+      <a href="trainer.html">Trainer</a>
+    </li>
+    <li>
+      <a href="#service">Service</a>
+      <ul class="animenu__nav__child">
+        <li><a href="aerobics.html">Aerobics</a></li>
+        
+	  </ul>
+    </li>     
+    <li>
+      <a href="about.html">About</a>
+    </li>
+   
+    <li>
+      <a href="top.html">Gallery</a>
+    </li>
+    <li>
+      <a href="Contact-Us.html">Contact</a>
+    </li>                 
+  </ul>
+</nav>
+  
+    <!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		<main class="site-content" role="main">
+		
+      
+      
+
+
+
+
+
+<br><br><br><br><br>
+
+
+<section id="portfolio">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center wow animated fadeInDown margin-top ">
+						<h2>Trainer</h2>
+						
+					</div>
+					
+
+					
+						
+					
+		</section>
+
+
+
+        <div class="page3">
+            <div class="box">
+              <h6>Making fitness personal</h6>
+              <a href="./design 1/index.html"><button class="btb">train Trainer</button></a>
+            </div>
+          </div>
+        
+          <!-- page 3 part 2 -->
+        
+          <div class="page3" style="
+          background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+           margin-top: 4%;">
+           
+            </div>
+          </div>
+<br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Social section -->
+		
+		<!-- end Social section -->
+		
+		
+		</main>
+		
+		<!--Hey! This is the original version
+of Simple CSS Waves-->
+
+<div class="header">
+
+  <!--Content before waves-->
+  <div class="inner-header flex">
+  <!--Just the logo.. Don't mind this-->
+  <svg version="1.1" class="logo" baseProfile="tin,283" />
+  <g><path fill="#fff"
+  d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+  C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+  c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+  </g>
+  </svg>
+  <section id="social" class="parallax">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+          <div class="sec-title text-center white wow animated fadeInDown">
+            <h2>FOLLOW US</h2>
+            <p>Beautifully simple follow buttons to help you get followers on</p>
+          </div>
+          
+          <ul class="social-button">
+            <li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+            <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+            <li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>							
+          </ul>
+          <div class="text-center">
+          <br/>
+          <br/>
+                     
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  
+  <!--Waves Container-->
+  <div>
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+  <defs>
+  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+  </defs>
+  <g class="parallax">
+  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+  <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+  </g>
+  </svg>
+  </div>
+  <!--Waves end-->
+  
+  </div>
+  <!--Header ends-->
+  
+  <!--Content starts-->
+  <div class="content flex">
+    <p> &copy; Design and Developed By human <a href="#"> </a> </p>Ff
+  </div>
+  <!--Content ends-->
+
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Google Map API -->
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
